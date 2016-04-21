@@ -14,6 +14,14 @@
 		6A0868201CB647F8004F9BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A08681F1CB647F8004F9BED /* Assets.xcassets */; };
 		6A0868231CB647F8004F9BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0868211CB647F8004F9BED /* LaunchScreen.storyboard */; };
 		6A08682E1CB647F9004F9BED /* YNWAModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08682D1CB647F9004F9BED /* YNWAModelTests.swift */; };
+		6AFDD0021CC6638C00365854 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDCFFC1CC6638C00365854 /* Company+CoreDataProperties.swift */; };
+		6AFDD0031CC6638C00365854 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDCFFD1CC6638C00365854 /* Company.swift */; };
+		6AFDD0041CC6638C00365854 /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDCFFE1CC6638C00365854 /* Employee+CoreDataProperties.swift */; };
+		6AFDD0051CC6638C00365854 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDCFFF1CC6638C00365854 /* Employee.swift */; };
+		6AFDD0061CC6638C00365854 /* Beacon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDD0001CC6638C00365854 /* Beacon+CoreDataProperties.swift */; };
+		6AFDD0071CC6638C00365854 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDD0011CC6638C00365854 /* Beacon.swift */; };
+		6AFDD0091CC8BE5F00365854 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDD0081CC8BE5F00365854 /* EmployeeTableViewCell.swift */; };
+		6AFDD00B1CC8C0D100365854 /* EmployeeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDD00A1CC8C0D100365854 /* EmployeeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,14 @@
 		6A0868291CB647F9004F9BED /* YNWAModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNWAModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A08682D1CB647F9004F9BED /* YNWAModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNWAModelTests.swift; sourceTree = "<group>"; };
 		6A08682F1CB647F9004F9BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AFDCFFC1CC6638C00365854 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6AFDCFFD1CC6638C00365854 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		6AFDCFFE1CC6638C00365854 /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6AFDCFFF1CC6638C00365854 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		6AFDD0001CC6638C00365854 /* Beacon+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beacon+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6AFDD0011CC6638C00365854 /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		6AFDD0081CC8BE5F00365854 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		6AFDD00A1CC8C0D100365854 /* EmployeeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +77,12 @@
 		6A0868091CB647F8004F9BED = {
 			isa = PBXGroup;
 			children = (
+				6AFDCFFC1CC6638C00365854 /* Company+CoreDataProperties.swift */,
+				6AFDCFFD1CC6638C00365854 /* Company.swift */,
+				6AFDCFFE1CC6638C00365854 /* Employee+CoreDataProperties.swift */,
+				6AFDCFFF1CC6638C00365854 /* Employee.swift */,
+				6AFDD0001CC6638C00365854 /* Beacon+CoreDataProperties.swift */,
+				6AFDD0011CC6638C00365854 /* Beacon.swift */,
 				6A0868141CB647F8004F9BED /* YNWAModel */,
 				6A08682C1CB647F9004F9BED /* YNWAModelTests */,
 				6A0868131CB647F8004F9BED /* Products */,
@@ -82,6 +104,8 @@
 				6A0868151CB647F8004F9BED /* AppDelegate.swift */,
 				6A0868171CB647F8004F9BED /* ViewController.swift */,
 				6A0868191CB647F8004F9BED /* Main.storyboard */,
+				6AFDD00A1CC8C0D100365854 /* EmployeeTableViewController.swift */,
+				6AFDD0081CC8BE5F00365854 /* EmployeeTableViewCell.swift */,
 				6A08681F1CB647F8004F9BED /* Assets.xcassets */,
 				6A0868211CB647F8004F9BED /* LaunchScreen.storyboard */,
 				6A0868241CB647F8004F9BED /* Info.plist */,
@@ -158,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A08680D1CB647F8004F9BED /* Build configuration list for PBXProject "YNWAModel" */;
+			buildConfigurationList = 6A08680D1CB647F8004F9BED /* Build configuration list for PBXProject "ExpoEasy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -203,7 +227,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A08681E1CB647F8004F9BED /* YNWAModel.xcdatamodeld in Sources */,
+				6AFDD0041CC6638C00365854 /* Employee+CoreDataProperties.swift in Sources */,
 				6A0868181CB647F8004F9BED /* ViewController.swift in Sources */,
+				6AFDD0091CC8BE5F00365854 /* EmployeeTableViewCell.swift in Sources */,
+				6AFDD0051CC6638C00365854 /* Employee.swift in Sources */,
+				6AFDD0021CC6638C00365854 /* Company+CoreDataProperties.swift in Sources */,
+				6AFDD0071CC6638C00365854 /* Beacon.swift in Sources */,
+				6AFDD0061CC6638C00365854 /* Beacon+CoreDataProperties.swift in Sources */,
+				6AFDD00B1CC8C0D100365854 /* EmployeeTableViewController.swift in Sources */,
+				6AFDD0031CC6638C00365854 /* Company.swift in Sources */,
 				6A0868161CB647F8004F9BED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A08680D1CB647F8004F9BED /* Build configuration list for PBXProject "YNWAModel" */ = {
+		6A08680D1CB647F8004F9BED /* Build configuration list for PBXProject "ExpoEasy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A0868301CB647F9004F9BED /* Debug */,
@@ -396,6 +428,7 @@
 				6A0868341CB647F9004F9BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A0868351CB647F9004F9BED /* Build configuration list for PBXNativeTarget "YNWAModelTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +437,7 @@
 				6A0868371CB647F9004F9BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

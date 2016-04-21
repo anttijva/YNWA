@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        deleteData()
+        populateCoreData()
+        
+        
+        
         return true
     }
 
@@ -62,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
         // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("SingleViewCoreData.sqlite")
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("SingleViewCoreData1.sqlite")
         var failureReason = "There was an error creating or loading the application's saved data."
         do {
             try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
@@ -106,6 +112,122 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func populateCoreData() {
+        
+        // Companies
+        let company = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
+        company.name = "Metro"
+        
+        let company2 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
+        company2.name = "Sport Inc."
+        
+        let company3 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
+        company3.name = "Kiasma"
+        
+        let company4 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
+        company4.name = "Construction Inc."
+        
+        let company5 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
+        company5.name = "Football Pro Inc."
+        
+        let company6 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
+        company6.name = "Pulse"
 
+        
+        // Employees
+        let employee = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
+        employee.name = "Alex"
+        employee.company = company
+        employee.position = "Tech Department Header"
+        
+    
+        let employee2 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
+        employee2.name = "Mikael"
+        employee2.company = company2
+        employee2.position = "Road Man"
+        
+        let employee3 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
+        employee3.name = "Juhani"
+        employee3.company = company3
+        employee3.position = "Developer"
+        
+        let employee4 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
+        employee4.name = "Antti"
+        employee4.company = company4
+        employee4.position = "Developer"
+        
+        let employee5 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
+        employee5.name = "Kevin"
+        employee5.company = company5
+        employee5.position = "Manager"
+        
+        let employee6 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
+        employee6.name = "KH"
+        employee6.company = company6
+        employee6.position = "Tester"
+        
+        
+        // Beacons
+        let beacon = NSEntityDescription.insertNewObjectForEntityForName("Beacon", inManagedObjectContext: managedObjectContext) as! Beacon
+        beacon.major = "35"
+        beacon.minor = "35"
+        beacon.company = company
+        beacon.employee = employee
+        
+        let beacon2 = NSEntityDescription.insertNewObjectForEntityForName("Beacon", inManagedObjectContext: managedObjectContext) as! Beacon
+        beacon2.major = "911"
+        beacon2.minor = "912"
+        beacon2.company = company2
+        beacon2.employee = employee2
+        
+        let beacon3 = NSEntityDescription.insertNewObjectForEntityForName("Beacon", inManagedObjectContext: managedObjectContext) as! Beacon
+        beacon3.major = "1319"
+        beacon3.minor = "50423"
+        beacon3.company = company3
+        beacon3.employee = employee3
+        
+        let beacon4 = NSEntityDescription.insertNewObjectForEntityForName("Beacon", inManagedObjectContext: managedObjectContext) as! Beacon
+        beacon4.major = "42204"
+        beacon4.minor = "15444"
+        beacon4.company = company4
+        beacon4.employee = employee4
+        
+        let beacon5 = NSEntityDescription.insertNewObjectForEntityForName("Beacon", inManagedObjectContext: managedObjectContext) as! Beacon
+        beacon5.major = "46880"
+        beacon5.minor = "36104"
+        beacon5.company = company5
+        beacon5.employee = employee5
+        
+        let beacon6 = NSEntityDescription.insertNewObjectForEntityForName("Beacon", inManagedObjectContext: managedObjectContext) as! Beacon
+        beacon6.major = "32127"
+        beacon6.minor = "12136"
+        beacon6.company = company6
+        beacon6.employee = employee6
+        
+        /*employee.beacon = beacon
+        company.beacon = beacon
+        
+        employee2.beacon = beacon2
+        company2.beacon = beacon2
+        
+        employee3.beacon = beacon3
+        company3.beacon = beacon3*/
+        
+        saveContext()
+    }
+    
+    func deleteData() {
+        let fetchRequest = NSFetchRequest(entityName: "Beacon")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        do {
+            try persistentStoreCoordinator.executeRequest(deleteRequest, withContext: managedObjectContext)
+        } catch let error as NSError {
+            debugPrint(error)
+        }
+        saveContext()
+    }
+   
 }
 

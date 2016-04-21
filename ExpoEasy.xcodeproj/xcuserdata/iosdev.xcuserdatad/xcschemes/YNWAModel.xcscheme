@@ -17,7 +17,7 @@
                BlueprintIdentifier = "6A0868111CB647F8004F9BED"
                BuildableName = "YNWAModel.app"
                BlueprintName = "YNWAModel"
-               ReferencedContainer = "container:YNWAModel.xcodeproj">
+               ReferencedContainer = "container:ExpoEasy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "6A0868281CB647F9004F9BED"
                BuildableName = "YNWAModelTests.xctest"
                BlueprintName = "YNWAModelTests"
-               ReferencedContainer = "container:YNWAModel.xcodeproj">
+               ReferencedContainer = "container:ExpoEasy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "6A0868111CB647F8004F9BED"
             BuildableName = "YNWAModel.app"
             BlueprintName = "YNWAModel"
-            ReferencedContainer = "container:YNWAModel.xcodeproj">
+            ReferencedContainer = "container:ExpoEasy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,7 +68,7 @@
             BlueprintIdentifier = "6A0868111CB647F8004F9BED"
             BuildableName = "YNWAModel.app"
             BlueprintName = "YNWAModel"
-            ReferencedContainer = "container:YNWAModel.xcodeproj">
+            ReferencedContainer = "container:ExpoEasy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -87,7 +87,7 @@
             BlueprintIdentifier = "6A0868111CB647F8004F9BED"
             BuildableName = "YNWAModel.app"
             BlueprintName = "YNWAModel"
-            ReferencedContainer = "container:YNWAModel.xcodeproj">
+            ReferencedContainer = "container:ExpoEasy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

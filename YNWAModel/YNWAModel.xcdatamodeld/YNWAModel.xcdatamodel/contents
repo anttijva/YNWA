@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15D21" minimumToolsVersion="Automatic">
-    <entity name="Beacon" syncable="YES">
+    <entity name="Beacon" representedClassName=".Beacon" syncable="YES">
+        <attribute name="accuracy" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="major" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="minor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="beacon" inverseEntity="Company" syncable="YES"/>
+        <relationship name="employee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="beacon" inverseEntity="Employee" syncable="YES"/>
     </entity>
-    <entity name="Company" syncable="YES">
+    <entity name="Company" representedClassName=".Company" syncable="YES">
         <attribute name="conpanyDescription" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="logo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="logoURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="major" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Beacon" syncable="YES"/>
+        <relationship name="beacon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Beacon" inverseName="company" inverseEntity="Beacon" syncable="YES"/>
+        <relationship name="employee" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Employee" inverseName="company" inverseEntity="Employee" syncable="YES"/>
     </entity>
-    <entity name="Person" syncable="YES">
+    <entity name="Employee" representedClassName=".Employee" syncable="YES">
         <attribute name="birthday" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="position" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" syncable="YES"/>
-        <relationship name="minor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Beacon" syncable="YES"/>
+        <attribute name="profileURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="beacon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Beacon" inverseName="employee" inverseEntity="Beacon" syncable="YES"/>
+        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="employee" inverseEntity="Company" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Beacon" positionX="-162" positionY="27" width="128" height="90"/>
-        <element name="Company" positionX="-108" positionY="291" width="128" height="105"/>
-        <element name="Person" positionX="126" positionY="78" width="128" height="120"/>
+        <element name="Beacon" positionX="-162" positionY="27" width="128" height="133"/>
+        <element name="Company" positionX="-108" positionY="291" width="128" height="118"/>
+        <element name="Employee" positionX="126" positionY="78" width="128" height="133"/>
     </elements>
 </model>

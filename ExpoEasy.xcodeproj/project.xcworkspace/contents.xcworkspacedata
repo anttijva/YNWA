@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:YNWAModel.xcodeproj">
+      location = "self:/Users/iosdev/Documents/iOS project/YNWAModel/ExpoEasy.xcodeproj">
    </FileRef>
 </Workspace>
