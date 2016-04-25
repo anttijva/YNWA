@@ -118,21 +118,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Companies
         let company = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company.name = "Metro"
+        company.companyDescription = "placeholder"
         
         let company2 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company2.name = "Sport Inc."
+        company2.companyDescription = "placeholder"
         
         let company3 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company3.name = "Kiasma"
-        
+        company3.companyDescription = "placeholder"
+
         let company4 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company4.name = "Construction Inc."
-        
+        company4.companyDescription = "placeholder"
+
         let company5 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company5.name = "Football Pro Inc."
-        
+        company5.companyDescription = "placeholder"
+
         let company6 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company6.name = "Pulse"
+        company6.companyDescription = "placeholder"
 
         
         // Employees

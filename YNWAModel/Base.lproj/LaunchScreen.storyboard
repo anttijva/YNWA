@@ -19,23 +19,48 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7D-5i-X41">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="Rfh-1m-ZMl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="160" y="276" width="81" height="21"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Rfh-1m-ZMl"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Rfh-1m-ZMl"/>
+                                    </mask>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="M7D-5i-X41" secondAttribute="bottom" constant="303" id="8kB-Fm-q3q"/>
+                            <constraint firstItem="M7D-5i-X41" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="255" id="K1s-qU-Lu7"/>
+                            <constraint firstItem="M7D-5i-X41" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="160" id="xdo-Kn-PXh"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="M7D-5i-X41"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="K1s-qU-Lu7"/>
+                                <exclude reference="xdo-Kn-PXh"/>
+                                <exclude reference="8kB-Fm-q3q"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="M7D-5i-X41"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="K1s-qU-Lu7"/>
+                                <include reference="xdo-Kn-PXh"/>
+                                <include reference="8kB-Fm-q3q"/>
                             </mask>
                         </variation>
                     </view>

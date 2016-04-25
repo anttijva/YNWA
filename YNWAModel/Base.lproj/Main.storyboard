@@ -109,9 +109,7 @@
                             <outlet property="delegate" destination="S3y-IG-XoZ" id="iPr-4i-XEh"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="b4y-WB-Coz"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="DHA-17-sDA"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
