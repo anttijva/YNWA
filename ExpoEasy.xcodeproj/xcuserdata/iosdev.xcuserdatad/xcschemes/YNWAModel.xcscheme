@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A0868111CB647F8004F9BED"
-               BuildableName = "YNWAModel.app"
-               BlueprintName = "YNWAModel"
+               BuildableName = "ExpoEasy.app"
+               BlueprintName = "ExpoEasy"
                ReferencedContainer = "container:ExpoEasy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A0868281CB647F9004F9BED"
-               BuildableName = "YNWAModelTests.xctest"
-               BlueprintName = "YNWAModelTests"
+               BuildableName = "ExpoEasy.xctest"
+               BlueprintName = "ExpoEasyTests"
                ReferencedContainer = "container:ExpoEasy.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A0868111CB647F8004F9BED"
-            BuildableName = "YNWAModel.app"
-            BlueprintName = "YNWAModel"
+            BuildableName = "ExpoEasy.app"
+            BlueprintName = "ExpoEasy"
             ReferencedContainer = "container:ExpoEasy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A0868111CB647F8004F9BED"
-            BuildableName = "YNWAModel.app"
-            BlueprintName = "YNWAModel"
+            BuildableName = "ExpoEasy.app"
+            BlueprintName = "ExpoEasy"
             ReferencedContainer = "container:ExpoEasy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A0868111CB647F8004F9BED"
-            BuildableName = "YNWAModel.app"
-            BlueprintName = "YNWAModel"
+            BuildableName = "ExpoEasy.app"
+            BlueprintName = "ExpoEasy"
             ReferencedContainer = "container:ExpoEasy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

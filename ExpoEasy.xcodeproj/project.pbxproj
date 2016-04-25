@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A0868121CB647F8004F9BED /* YNWAModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YNWAModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0868121CB647F8004F9BED /* ExpoEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpoEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0868151CB647F8004F9BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A0868171CB647F8004F9BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A08681A1CB647F8004F9BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		6A08681F1CB647F8004F9BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A0868221CB647F8004F9BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A0868241CB647F8004F9BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A0868291CB647F9004F9BED /* YNWAModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNWAModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0868291CB647F9004F9BED /* ExpoEasy.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpoEasy.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A08682D1CB647F9004F9BED /* YNWAModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNWAModelTests.swift; sourceTree = "<group>"; };
 		6A08682F1CB647F9004F9BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AFDCFFC1CC6638C00365854 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 				6AFDCFFF1CC6638C00365854 /* Employee.swift */,
 				6AFDD0001CC6638C00365854 /* Beacon+CoreDataProperties.swift */,
 				6AFDD0011CC6638C00365854 /* Beacon.swift */,
-				6A0868141CB647F8004F9BED /* YNWAModel */,
+				6A0868141CB647F8004F9BED /* ExpoEasy */,
 				6A08682C1CB647F9004F9BED /* YNWAModelTests */,
 				6A0868131CB647F8004F9BED /* Products */,
 			);
@@ -92,13 +92,13 @@
 		6A0868131CB647F8004F9BED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A0868121CB647F8004F9BED /* YNWAModel.app */,
-				6A0868291CB647F9004F9BED /* YNWAModelTests.xctest */,
+				6A0868121CB647F8004F9BED /* ExpoEasy.app */,
+				6A0868291CB647F9004F9BED /* ExpoEasy.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A0868141CB647F8004F9BED /* YNWAModel */ = {
+		6A0868141CB647F8004F9BED /* ExpoEasy */ = {
 			isa = PBXGroup;
 			children = (
 				6A0868151CB647F8004F9BED /* AppDelegate.swift */,
@@ -111,6 +111,7 @@
 				6A0868241CB647F8004F9BED /* Info.plist */,
 				6A08681C1CB647F8004F9BED /* YNWAModel.xcdatamodeld */,
 			);
+			name = ExpoEasy;
 			path = YNWAModel;
 			sourceTree = "<group>";
 		};
@@ -126,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A0868111CB647F8004F9BED /* YNWAModel */ = {
+		6A0868111CB647F8004F9BED /* ExpoEasy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A0868321CB647F9004F9BED /* Build configuration list for PBXNativeTarget "YNWAModel" */;
+			buildConfigurationList = 6A0868321CB647F9004F9BED /* Build configuration list for PBXNativeTarget "ExpoEasy" */;
 			buildPhases = (
 				6A08680E1CB647F8004F9BED /* Sources */,
 				6A08680F1CB647F8004F9BED /* Frameworks */,
@@ -138,14 +139,14 @@
 			);
 			dependencies = (
 			);
-			name = YNWAModel;
+			name = ExpoEasy;
 			productName = YNWAModel;
-			productReference = 6A0868121CB647F8004F9BED /* YNWAModel.app */;
+			productReference = 6A0868121CB647F8004F9BED /* ExpoEasy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6A0868281CB647F9004F9BED /* YNWAModelTests */ = {
+		6A0868281CB647F9004F9BED /* ExpoEasyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A0868351CB647F9004F9BED /* Build configuration list for PBXNativeTarget "YNWAModelTests" */;
+			buildConfigurationList = 6A0868351CB647F9004F9BED /* Build configuration list for PBXNativeTarget "ExpoEasyTests" */;
 			buildPhases = (
 				6A0868251CB647F9004F9BED /* Sources */,
 				6A0868261CB647F9004F9BED /* Frameworks */,
@@ -156,9 +157,9 @@
 			dependencies = (
 				6A08682B1CB647F9004F9BED /* PBXTargetDependency */,
 			);
-			name = YNWAModelTests;
+			name = ExpoEasyTests;
 			productName = YNWAModelTests;
-			productReference = 6A0868291CB647F9004F9BED /* YNWAModelTests.xctest */;
+			productReference = 6A0868291CB647F9004F9BED /* ExpoEasy.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -195,8 +196,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A0868111CB647F8004F9BED /* YNWAModel */,
-				6A0868281CB647F9004F9BED /* YNWAModelTests */,
+				6A0868111CB647F8004F9BED /* ExpoEasy */,
+				6A0868281CB647F9004F9BED /* ExpoEasyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,7 +254,7 @@
 /* Begin PBXTargetDependency section */
 		6A08682B1CB647F9004F9BED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6A0868111CB647F8004F9BED /* YNWAModel */;
+			target = 6A0868111CB647F8004F9BED /* ExpoEasy */;
 			targetProxy = 6A08682A1CB647F9004F9BED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -370,7 +371,7 @@
 				INFOPLIST_FILE = YNWAModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.YNWAModel;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ExpoEasy;
 			};
 			name = Debug;
 		};
@@ -381,7 +382,7 @@
 				INFOPLIST_FILE = YNWAModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.YNWAModel;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ExpoEasy;
 			};
 			name = Release;
 		};
@@ -392,8 +393,8 @@
 				INFOPLIST_FILE = YNWAModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.YNWAModelTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YNWAModel.app/YNWAModel";
+				PRODUCT_NAME = ExpoEasy;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpoEasy.app/ExpoEasy";
 			};
 			name = Debug;
 		};
@@ -404,8 +405,8 @@
 				INFOPLIST_FILE = YNWAModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.YNWAModelTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YNWAModel.app/YNWAModel";
+				PRODUCT_NAME = ExpoEasy;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpoEasy.app/ExpoEasy";
 			};
 			name = Release;
 		};
@@ -421,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A0868321CB647F9004F9BED /* Build configuration list for PBXNativeTarget "YNWAModel" */ = {
+		6A0868321CB647F9004F9BED /* Build configuration list for PBXNativeTarget "ExpoEasy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A0868331CB647F9004F9BED /* Debug */,
@@ -430,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A0868351CB647F9004F9BED /* Build configuration list for PBXNativeTarget "YNWAModelTests" */ = {
+		6A0868351CB647F9004F9BED /* Build configuration list for PBXNativeTarget "ExpoEasyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A0868361CB647F9004F9BED /* Debug */,

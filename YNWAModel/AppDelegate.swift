@@ -205,14 +205,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         beacon6.company = company6
         beacon6.employee = employee6
         
-        /*employee.beacon = beacon
-        company.beacon = beacon
         
-        employee2.beacon = beacon2
-        company2.beacon = beacon2
-        
-        employee3.beacon = beacon3
-        company3.beacon = beacon3*/
         
         saveContext()
     }
