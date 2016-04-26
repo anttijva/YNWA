@@ -14,7 +14,7 @@ import CoreData
 
 extension Company {
 
-    @NSManaged var conpanyDescription: String?
+    @NSManaged var companyDescription: String?
     @NSManaged var logoURL: String?
     @NSManaged var name: String?
     @NSManaged var beacon: Beacon?
