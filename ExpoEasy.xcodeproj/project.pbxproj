@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A0868161CB647F8004F9BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0868151CB647F8004F9BED /* AppDelegate.swift */; };
-		6A0868181CB647F8004F9BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0868171CB647F8004F9BED /* ViewController.swift */; };
+		6A0868181CB647F8004F9BED /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0868171CB647F8004F9BED /* EmployeeViewController.swift */; };
 		6A08681B1CB647F8004F9BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0868191CB647F8004F9BED /* Main.storyboard */; };
 		6A08681E1CB647F8004F9BED /* YNWAModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A08681C1CB647F8004F9BED /* YNWAModel.xcdatamodeld */; };
 		6A0868201CB647F8004F9BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A08681F1CB647F8004F9BED /* Assets.xcassets */; };
@@ -22,6 +22,7 @@
 		6AFDD0071CC6638C00365854 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDD0011CC6638C00365854 /* Beacon.swift */; };
 		6AFDD0091CC8BE5F00365854 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDD0081CC8BE5F00365854 /* EmployeeTableViewCell.swift */; };
 		6AFDD00B1CC8C0D100365854 /* EmployeeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDD00A1CC8C0D100365854 /* EmployeeTableViewController.swift */; };
+		6AFDD00D1CCE326C00365854 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFDD00C1CCE326C00365854 /* CompanyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		6A0868121CB647F8004F9BED /* ExpoEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpoEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0868151CB647F8004F9BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A0868171CB647F8004F9BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A0868171CB647F8004F9BED /* EmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
 		6A08681A1CB647F8004F9BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A08681D1CB647F8004F9BED /* YNWAModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YNWAModel.xcdatamodel; sourceTree = "<group>"; };
 		6A08681F1CB647F8004F9BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		6AFDD0011CC6638C00365854 /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
 		6AFDD0081CC8BE5F00365854 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		6AFDD00A1CC8C0D100365854 /* EmployeeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewController.swift; sourceTree = "<group>"; };
+		6AFDD00C1CCE326C00365854 /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				6A0868151CB647F8004F9BED /* AppDelegate.swift */,
-				6A0868171CB647F8004F9BED /* ViewController.swift */,
+				6AFDD00C1CCE326C00365854 /* CompanyViewController.swift */,
+				6A0868171CB647F8004F9BED /* EmployeeViewController.swift */,
 				6A0868191CB647F8004F9BED /* Main.storyboard */,
 				6AFDD00A1CC8C0D100365854 /* EmployeeTableViewController.swift */,
 				6AFDD0081CC8BE5F00365854 /* EmployeeTableViewCell.swift */,
@@ -174,7 +177,7 @@
 				TargetAttributes = {
 					6A0868111CB647F8004F9BED = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 3CUXDHQ66H;
+						DevelopmentTeam = NFT4GE2J25;
 					};
 					6A0868281CB647F9004F9BED = {
 						CreatedOnToolsVersion = 7.3;
@@ -229,12 +232,13 @@
 			files = (
 				6A08681E1CB647F8004F9BED /* YNWAModel.xcdatamodeld in Sources */,
 				6AFDD0041CC6638C00365854 /* Employee+CoreDataProperties.swift in Sources */,
-				6A0868181CB647F8004F9BED /* ViewController.swift in Sources */,
+				6A0868181CB647F8004F9BED /* EmployeeViewController.swift in Sources */,
 				6AFDD0091CC8BE5F00365854 /* EmployeeTableViewCell.swift in Sources */,
 				6AFDD0051CC6638C00365854 /* Employee.swift in Sources */,
 				6AFDD0021CC6638C00365854 /* Company+CoreDataProperties.swift in Sources */,
 				6AFDD0071CC6638C00365854 /* Beacon.swift in Sources */,
 				6AFDD0061CC6638C00365854 /* Beacon+CoreDataProperties.swift in Sources */,
+				6AFDD00D1CCE326C00365854 /* CompanyViewController.swift in Sources */,
 				6AFDD00B1CC8C0D100365854 /* EmployeeTableViewController.swift in Sources */,
 				6AFDD0031CC6638C00365854 /* Company.swift in Sources */,
 				6A0868161CB647F8004F9BED /* AppDelegate.swift in Sources */,
@@ -374,6 +378,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.YNWAModel;
 				PRODUCT_NAME = ExpoEasy;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -387,6 +392,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.YNWAModel;
 				PRODUCT_NAME = ExpoEasy;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

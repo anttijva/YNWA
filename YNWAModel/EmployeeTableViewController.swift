@@ -115,7 +115,7 @@ class EmployeeTableViewController: UITableViewController, NSFetchedResultsContro
         cell.companyNameLabel.text = beacon.company?.name
         cell.employeePositionLabel.text = beacon.employee?.position
         cell.beaconAccuracyLabel.text = beacon.accuracy
-        
+        load_image((beacon.employee?.profileURL)!, imageView: cell.profileImageView)
         
         return cell
     }
@@ -156,14 +156,52 @@ class EmployeeTableViewController: UITableViewController, NSFetchedResultsContro
     }
     */
 
-    /*
+ 
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "ShowPersonalInformation" {
+            let personalInformationViewController = segue.destinationViewController as! EmployeeViewController
+            if let selectedCell = sender as? EmployeeTableViewCell {
+                let indexPath = tableView.indexPathForCell(selectedCell)
+                let selectedBeacon = beaconsToDisplay[indexPath!.row]
+                personalInformationViewController.beacon = selectedBeacon
+                
+            }
+        }
     }
-    */
-
+    
+    
+    func load_image(urlString:String, imageView: UIImageView){
+        print("DOWNLOAD IMAGES" )
+        let imgURL: NSURL = NSURL(string: urlString)!
+        let request: NSURLRequest = NSURLRequest(URL: imgURL)
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(request){
+            (data, response, error) -> Void in
+            
+            print(error)
+            print(response)
+            print(data)
+            if (error == nil && data != nil) {
+                
+                func display_image() {
+                    print("DISPLAY IMAGE")
+                    imageView.image = UIImage(data: data!)
+                }
+                
+                dispatch_async(dispatch_get_main_queue(), display_image)
+            }
+        }
+        task.resume()
+        
+    }
+    
+    
+    
+    
 }

@@ -5,16 +5,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Employee Table View Controller-->
+        <!--All People-->
         <scene sceneID="zm2-On-dPr">
             <objects>
-                <tableViewController id="S3y-IG-XoZ" customClass="EmployeeTableViewController" customModule="YNWAModel" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="S3y-IG-XoZ" customClass="EmployeeTableViewController" customModule="ExpoEasy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="fa0-0W-85P">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmployeeTableViewCell" rowHeight="100" id="BpD-hT-wdu" customClass="EmployeeTableViewCell" customModule="YNWAModel" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmployeeTableViewCell" rowHeight="100" id="BpD-hT-wdu" customClass="EmployeeTableViewCell" customModule="ExpoEasy" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BpD-hT-wdu" id="RMN-Kv-fTA">
@@ -63,16 +63,6 @@
                                                 <rect key="frame" x="8" y="0.0" width="71" height="71"/>
                                             </variation>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7X-PE-QlN">
-                                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                            <state key="normal" title="&gt;"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="346" y="37" width="46" height="21"/>
-                                            </variation>
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="HSF-1k-z4R"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                     <variation key="default">
                                         <mask key="subviews">
@@ -81,7 +71,6 @@
                                             <exclude reference="a8F-Y7-XHT"/>
                                             <exclude reference="iXt-Kl-hXh"/>
                                             <exclude reference="x4o-z1-Toy"/>
-                                            <exclude reference="T7X-PE-QlN"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -91,7 +80,6 @@
                                             <include reference="a8F-Y7-XHT"/>
                                             <include reference="iXt-Kl-hXh"/>
                                             <include reference="x4o-z1-Toy"/>
-                                            <include reference="T7X-PE-QlN"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -101,6 +89,7 @@
                                     <outlet property="employeePositionLabel" destination="iXt-Kl-hXh" id="Xrb-JO-Wfe"/>
                                     <outlet property="nameLabel" destination="MTA-LZ-Vyf" id="oWZ-yO-hTV"/>
                                     <outlet property="profileImageView" destination="x4o-z1-Toy" id="lks-pu-lb4"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowPersonalInformation" id="7uf-IK-w2h"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -109,20 +98,18 @@
                             <outlet property="delegate" destination="S3y-IG-XoZ" id="iPr-4i-XEh"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="b4y-WB-Coz"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="DHA-17-sDA"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="All People" id="DHA-17-sDA"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFF-wu-8kY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="739.5" y="364"/>
         </scene>
-        <!--View Controller-->
+        <!--Personal Information-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YNWAModel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EmployeeViewController" customModule="ExpoEasy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -134,7 +121,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Kd-qs-oxa">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="28" width="400" height="128"/>
+                                    <rect key="frame" x="0.0" y="64" width="400" height="92"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DuS-UR-lIi">
@@ -143,7 +130,7 @@
                                     <rect key="frame" x="140" y="193" width="120" height="128"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sj-ia-sTJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sj-ia-sTJ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -152,7 +139,7 @@
                                     <rect key="frame" x="20" y="329" width="360" height="50"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM7-XU-BAx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM7-XU-BAx">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -161,17 +148,7 @@
                                     <rect key="frame" x="20" y="387" width="360" height="50"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV2-N1-HU1">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="&gt;"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="332" y="445" width="48" height="50"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="bI0-JP-GM2" kind="show" id="fUV-mR-fcg"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY8-fc-uop">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY8-fc-uop">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -180,15 +157,16 @@
                                     <rect key="frame" x="20" y="503" width="360" height="50"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBs-Ig-2ts">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Heo-X4-1RD">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Company: "/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="445" width="360" height="50"/>
                                 </variation>
-                            </label>
+                                <connections>
+                                    <segue destination="bI0-JP-GM2" kind="show" identifier="ShowCompanyDescription" id="pr6-nh-AVm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -197,9 +175,8 @@
                                 <exclude reference="DuS-UR-lIi"/>
                                 <exclude reference="9Sj-ia-sTJ"/>
                                 <exclude reference="PM7-XU-BAx"/>
-                                <exclude reference="XV2-N1-HU1"/>
                                 <exclude reference="OY8-fc-uop"/>
-                                <exclude reference="SBs-Ig-2ts"/>
+                                <exclude reference="Heo-X4-1RD"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -208,21 +185,27 @@
                                 <include reference="DuS-UR-lIi"/>
                                 <include reference="9Sj-ia-sTJ"/>
                                 <include reference="PM7-XU-BAx"/>
-                                <include reference="XV2-N1-HU1"/>
                                 <include reference="OY8-fc-uop"/>
-                                <include reference="SBs-Ig-2ts"/>
+                                <include reference="Heo-X4-1RD"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Personal Information" id="r3E-E5-5ho"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="PM7-XU-BAx" id="Ccy-be-Nrh"/>
+                        <outlet property="companyButton" destination="Heo-X4-1RD" id="OmG-3u-N3e"/>
+                        <outlet property="nameLabel" destination="9Sj-ia-sTJ" id="Ep4-HG-mZg"/>
+                        <outlet property="positionLabel" destination="OY8-fc-uop" id="EQT-P0-Khm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1461" y="364"/>
+            <point key="canvasLocation" x="1512" y="364"/>
         </scene>
-        <!--View Controller-->
+        <!--Company View Controller-->
         <scene sceneID="kCH-um-N1f">
             <objects>
-                <viewController id="bI0-JP-GM2" sceneMemberID="viewController">
+                <viewController id="bI0-JP-GM2" customClass="CompanyViewController" customModule="ExpoEasy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q5x-jr-hI2"/>
                         <viewControllerLayoutGuide type="bottom" id="snO-KZ-h7U"/>
@@ -271,10 +254,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="EsD-dz-6dj" id="idP-pP-oZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="utS-wY-Xbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2155.5" y="364"/>
+            <point key="canvasLocation" x="2215.5" y="364"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4LC-pW-nT1">

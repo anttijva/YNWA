@@ -119,6 +119,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let company = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company.name = "Metro"
         
+        
         let company2 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company2.name = "Sport Inc."
         
@@ -140,32 +141,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         employee.name = "Alex"
         employee.company = company
         employee.position = "Tech Department Header"
+        employee.profileURL = "http://users.metropolia.fi/~thanhtra/images/me.jpg"
         
     
         let employee2 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
         employee2.name = "Mikael"
         employee2.company = company2
         employee2.position = "Road Man"
+        employee2.profileURL = "http://users.metropolia.fi/~thanhtra/sad.gif"
         
         let employee3 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
         employee3.name = "Juhani"
         employee3.company = company3
         employee3.position = "Developer"
+        employee3.profileURL = "http://users.metropolia.fi/~thanhtra/sad.gif"
         
         let employee4 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
         employee4.name = "Antti"
         employee4.company = company4
         employee4.position = "Developer"
+        employee4.profileURL = "http://users.metropolia.fi/~thanhtra/images/me.jpg"
         
         let employee5 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
         employee5.name = "Kevin"
         employee5.company = company5
         employee5.position = "Manager"
+        employee5.profileURL = "http://users.metropolia.fi/~thanhtra/images/me.jpg"
         
         let employee6 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
         employee6.name = "KH"
         employee6.company = company6
         employee6.position = "Tester"
+        employee6.profileURL = "http://users.metropolia.fi/~thanhtra/sad.gif"
         
         
         // Beacons
@@ -182,20 +189,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         beacon2.employee = employee2
         
         let beacon3 = NSEntityDescription.insertNewObjectForEntityForName("Beacon", inManagedObjectContext: managedObjectContext) as! Beacon
-        beacon3.major = "1319"
-        beacon3.minor = "50423"
+        beacon3.major = "57832"
+        beacon3.minor = "7199"
         beacon3.company = company3
         beacon3.employee = employee3
         
         let beacon4 = NSEntityDescription.insertNewObjectForEntityForName("Beacon", inManagedObjectContext: managedObjectContext) as! Beacon
-        beacon4.major = "42204"
-        beacon4.minor = "15444"
+        beacon4.major = "46880"
+        beacon4.minor = "36104"
         beacon4.company = company4
         beacon4.employee = employee4
         
         let beacon5 = NSEntityDescription.insertNewObjectForEntityForName("Beacon", inManagedObjectContext: managedObjectContext) as! Beacon
-        beacon5.major = "46880"
-        beacon5.minor = "36104"
+        
+        beacon5.major = "42204"
+        beacon5.minor = "15444"
         beacon5.company = company5
         beacon5.employee = employee5
         
