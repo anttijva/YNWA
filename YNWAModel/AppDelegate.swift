@@ -68,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
         // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("SingleViewCoreData1.sqlite")
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("SingleViewCoreData2.sqlite")
         var failureReason = "There was an error creating or loading the application's saved data."
         do {
             try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
@@ -119,27 +119,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let company = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company.name = "Metro"
         company.companyDescription = "placeholder"
+        company.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
+        company.companyURL = "http://www.metropolia.fi/"
         
         
         let company2 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company2.name = "Sport Inc."
         company2.companyDescription = "placeholder"
+        company2.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
         
         let company3 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company3.name = "Kiasma"
         company3.companyDescription = "placeholder"
+        company3.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
 
         let company4 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company4.name = "Construction Inc."
         company4.companyDescription = "placeholder"
+        company4.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/background.jpg"
 
         let company5 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company5.name = "Football Pro Inc."
         company5.companyDescription = "placeholder"
+        company5.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/background.jpg"
 
         let company6 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company6.name = "Pulse"
         company6.companyDescription = "placeholder"
+        company6.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/background.jpg"
+        company6.companyURL = "http://www.metropolia.fi/"
 
         
         // Employees

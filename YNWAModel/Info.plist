@@ -47,14 +47,19 @@
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
 		<key>NSExceptionDomains</key>
-		<dict/>
-		<key>http://users.metropolia.fi</key>
 		<dict>
-			<key>NSIncludesSubdomains</key>
-			<true/>
-			<key>NSExceptionAllowsInsecureHTTPLoads</key>
-			<true/>
+			<key>users.metropolia.fi</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 		</dict>
 	</dict>
 </dict>

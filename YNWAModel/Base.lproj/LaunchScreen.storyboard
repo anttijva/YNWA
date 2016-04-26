@@ -48,9 +48,9 @@
                                 <exclude reference="M7D-5i-X41"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="8kB-Fm-q3q"/>
                                 <exclude reference="K1s-qU-Lu7"/>
                                 <exclude reference="xdo-Kn-PXh"/>
-                                <exclude reference="8kB-Fm-q3q"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -58,9 +58,9 @@
                                 <include reference="M7D-5i-X41"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="8kB-Fm-q3q"/>
                                 <include reference="K1s-qU-Lu7"/>
                                 <include reference="xdo-Kn-PXh"/>
-                                <include reference="8kB-Fm-q3q"/>
                             </mask>
                         </variation>
                     </view>

@@ -1,8 +1,8 @@
 //
 //  Company+CoreDataProperties.swift
-//  YNWAModel
+//  ExpoEasy
 //
-//  Created by iosdev on 21.4.2016.
+//  Created by iosdev on 26.4.2016.
 //  Copyright © 2016 thanhbinhtran. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -17,6 +17,7 @@ extension Company {
     @NSManaged var companyDescription: String?
     @NSManaged var logoURL: String?
     @NSManaged var name: String?
+    @NSManaged var companyURL: String?
     @NSManaged var beacon: Beacon?
     @NSManaged var employee: NSSet?
 

@@ -1,8 +1,8 @@
 //
-//  Employee+CoreDataProperties.swift
-//  YNWAModel
+//  Beacon+CoreDataProperties.swift
+//  ExpoEasy
 //
-//  Created by iosdev on 21.4.2016.
+//  Created by iosdev on 26.4.2016.
 //  Copyright © 2016 thanhbinhtran. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -12,13 +12,13 @@
 import Foundation
 import CoreData
 
-extension Employee {
+extension Beacon {
 
-    @NSManaged var birthday: NSDate?
-    @NSManaged var name: String?
-    @NSManaged var position: String?
-    @NSManaged var profileURL: String?
+    @NSManaged var major: String?
+    @NSManaged var minor: String?
+    @NSManaged var uuid: String?
+    @NSManaged var accuracy: String?
     @NSManaged var company: Company?
-    @NSManaged var beacon: Beacon?
+    @NSManaged var employee: Employee?
 
 }
