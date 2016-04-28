@@ -117,8 +117,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Companies
         let company = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
-        company.name = "Metropolia"
-        company.companyDescription = "Metropolia on pääkaupunkiseudulla toimiva Suomen suurin ammattikorkeakoulu. Se kouluttaa kulttuurin, liiketalouden, sosiaali- ja terveysalan sekä tekniikan asiantuntijoita ja kehittäjiä. Metropolia muodostaa yhteisön, jossa erilaiset ihmiset ja maailmat kohtaavat ja joka synnyttää oivalluksia ja osaamista työhön ja hyvinvointia elämään. Metropolia on vastuullinen kumppani ja korkeakoulutuksen uudistaja, joka yhteistyössä löytää uusia ratkaisuja ja rakentaa parempaa tulevaisuutta."
+        company.name = "Metro"
+        company.companyDescription = "placeholder"
         company.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
         company.companyURL = "http://www.metropolia.fi/"
         
