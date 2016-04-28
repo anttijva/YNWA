@@ -17,57 +17,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7D-5i-X41">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ExpoEasy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7D-5i-X41">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="82" id="Rfh-1m-ZMl"/>
+                                    <constraint firstAttribute="width" constant="82" id="PXZ-m1-SGG"/>
+                                    <constraint firstAttribute="height" constant="22" id="kdO-Ay-lha"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Rfh-1m-ZMl"/>
+                                        <exclude reference="PXZ-m1-SGG"/>
+                                        <exclude reference="kdO-Ay-lha"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="Rfh-1m-ZMl"/>
+                                        <include reference="PXZ-m1-SGG"/>
+                                        <include reference="kdO-Ay-lha"/>
                                     </mask>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZGS-Ap-PZb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="M7D-5i-X41" secondAttribute="bottom" constant="303" id="8kB-Fm-q3q"/>
-                            <constraint firstItem="M7D-5i-X41" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="255" id="K1s-qU-Lu7"/>
-                            <constraint firstItem="M7D-5i-X41" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="160" id="xdo-Kn-PXh"/>
+                            <constraint firstItem="M7D-5i-X41" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="57z-cK-Utl"/>
+                            <constraint firstItem="M7D-5i-X41" firstAttribute="leading" secondItem="ZGS-Ap-PZb" secondAttribute="leading" id="NS6-9Y-8CW"/>
+                            <constraint firstItem="M7D-5i-X41" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="162" id="ONt-y5-9fB"/>
+                            <constraint firstItem="ZGS-Ap-PZb" firstAttribute="top" secondItem="M7D-5i-X41" secondAttribute="bottom" constant="8" symbolic="YES" id="k9H-DJ-wwH"/>
+                            <constraint firstItem="M7D-5i-X41" firstAttribute="trailing" secondItem="ZGS-Ap-PZb" secondAttribute="trailing" id="mjH-2t-1gT"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZGS-Ap-PZb" secondAttribute="bottom" constant="306" id="zAM-N8-Mj1"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="M7D-5i-X41"/>
+                                <exclude reference="ZGS-Ap-PZb"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8kB-Fm-q3q"/>
-                                <exclude reference="K1s-qU-Lu7"/>
-                                <exclude reference="xdo-Kn-PXh"/>
+                                <exclude reference="57z-cK-Utl"/>
+                                <exclude reference="NS6-9Y-8CW"/>
+                                <exclude reference="ONt-y5-9fB"/>
+                                <exclude reference="mjH-2t-1gT"/>
+                                <exclude reference="k9H-DJ-wwH"/>
+                                <exclude reference="zAM-N8-Mj1"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="M7D-5i-X41"/>
+                                <include reference="ZGS-Ap-PZb"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8kB-Fm-q3q"/>
-                                <include reference="K1s-qU-Lu7"/>
-                                <include reference="xdo-Kn-PXh"/>
+                                <include reference="57z-cK-Utl"/>
+                                <include reference="NS6-9Y-8CW"/>
+                                <include reference="ONt-y5-9fB"/>
+                                <include reference="mjH-2t-1gT"/>
+                                <include reference="k9H-DJ-wwH"/>
+                                <include reference="zAM-N8-Mj1"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LaunchImage" width="57" height="57"/>
+    </resources>
 </document>
