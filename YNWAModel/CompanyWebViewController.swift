@@ -18,12 +18,14 @@ class CompanyWebViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        loadAddress()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        loadAddress()
+        
+        
     }
     
 
@@ -38,7 +40,9 @@ class CompanyWebViewController: UIViewController {
     */
     
     func loadAddress() {
-        let requestURL = NSURL(string: (company?.companyURL)!)
+        print("Load Address")
+        let requestURL = NSURL(string: (self.company?.companyURL)!)
+        print(requestURL)
         let request = NSURLRequest(URL: requestURL!)
         self.companyWebView.loadRequest(request)
     }

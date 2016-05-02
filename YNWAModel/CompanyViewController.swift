@@ -20,6 +20,9 @@ class CompanyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set background color to back
+        self.view.backgroundColor = UIColor.blackColor()
+        
         if let company = company {
             descriptionTextView.text = company.companyDescription
             

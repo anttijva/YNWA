@@ -14,13 +14,14 @@ class EmployeeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var companyNameLabel: UILabel!
-    @IBOutlet weak var employeePositionLabel: UILabel!
     @IBOutlet weak var beaconAccuracyLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+    
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

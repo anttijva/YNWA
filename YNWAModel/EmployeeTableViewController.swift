@@ -23,6 +23,9 @@ class EmployeeTableViewController: UITableViewController, NSFetchedResultsContro
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set background color to back
+        self.view.backgroundColor = UIColor.blackColor()
+        
         locationManager.delegate = self
         
         // Ask to gain access to Location Service
@@ -41,14 +44,15 @@ class EmployeeTableViewController: UITableViewController, NSFetchedResultsContro
         self.beaconsToDisplay.removeAll()
         let knownBeacons = beacons.filter{ $0.proximity != CLProximity.Unknown }
         self.beaconsDetected = knownBeacons
-        print(beaconsDetected)
+        let beconsDectected1 = self.beaconsDetected
+        //print(beaconsDetected)
         
-        for bd in beaconsDetected {
+        for bd in beconsDectected1 {
             for b in self.beacons {
                 if String(bd.major) == b.major && String(bd.minor) == b.minor{
                     
                     let str = bd.accuracy.description
-                    let index1 = str.startIndex.advancedBy(5)
+                    let index1 = str.startIndex.advancedBy(2)
                     let accuracyDisplay = str.substringToIndex(index1)
                     
                     b.accuracy = accuracyDisplay + " m"
@@ -113,9 +117,9 @@ class EmployeeTableViewController: UITableViewController, NSFetchedResultsContro
         
         cell.nameLabel.text = beacon.employee?.name
         cell.companyNameLabel.text = beacon.company?.name
-        cell.employeePositionLabel.text = beacon.employee?.position
         cell.beaconAccuracyLabel.text = beacon.accuracy
         load_image((beacon.employee?.profileURL)!, imageView: cell.profileImageView)
+        circularImage(cell.profileImageView)
         
         return cell
     }
@@ -184,9 +188,9 @@ class EmployeeTableViewController: UITableViewController, NSFetchedResultsContro
         let task = session.dataTaskWithRequest(request){
             (data, response, error) -> Void in
             
-            print(error)
+            print("REsPONSE")
             print(response)
-            print(data)
+            
             if (error == nil && data != nil) {
                 
                 func display_image() {
@@ -201,6 +205,17 @@ class EmployeeTableViewController: UITableViewController, NSFetchedResultsContro
         
     }
     
+    // function to make image circle
+    func circularImage(photoImageView: UIImageView?)
+    {
+        photoImageView!.layer.frame = CGRectInset(photoImageView!.layer.frame, 0, 0)
+        photoImageView!.layer.borderColor = UIColor.grayColor().CGColor
+        photoImageView!.layer.cornerRadius = photoImageView!.frame.height/2
+        photoImageView!.layer.masksToBounds = false
+        photoImageView!.clipsToBounds = true
+        photoImageView!.layer.borderWidth = 0.5
+        photoImageView!.contentMode = UIViewContentMode.ScaleAspectFill
+    }
     
     
     

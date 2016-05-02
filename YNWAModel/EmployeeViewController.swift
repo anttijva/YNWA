@@ -24,6 +24,9 @@ class EmployeeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set background color to back
+        self.view.backgroundColor = UIColor.blackColor()
+        
         if let beacon = beacon {
             nameLabel.text?.appendContentsOf((beacon.employee?.name)!)
             positionLabel.text?.appendContentsOf((beacon.employee?.position)!)

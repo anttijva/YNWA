@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,67 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ExpoEasy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7D-5i-X41">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="82" id="PXZ-m1-SGG"/>
-                                    <constraint firstAttribute="height" constant="22" id="kdO-Ay-lha"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="PXZ-m1-SGG"/>
-                                        <exclude reference="kdO-Ay-lha"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="PXZ-m1-SGG"/>
-                                        <include reference="kdO-Ay-lha"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZGS-Ap-PZb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-go-fgK">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="M7D-5i-X41" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="57z-cK-Utl"/>
-                            <constraint firstItem="M7D-5i-X41" firstAttribute="leading" secondItem="ZGS-Ap-PZb" secondAttribute="leading" id="NS6-9Y-8CW"/>
-                            <constraint firstItem="M7D-5i-X41" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="162" id="ONt-y5-9fB"/>
-                            <constraint firstItem="ZGS-Ap-PZb" firstAttribute="top" secondItem="M7D-5i-X41" secondAttribute="bottom" constant="8" symbolic="YES" id="k9H-DJ-wwH"/>
-                            <constraint firstItem="M7D-5i-X41" firstAttribute="trailing" secondItem="ZGS-Ap-PZb" secondAttribute="trailing" id="mjH-2t-1gT"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZGS-Ap-PZb" secondAttribute="bottom" constant="306" id="zAM-N8-Mj1"/>
+                            <constraint firstItem="fcq-go-fgK" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="216" id="4Qf-2p-Krn"/>
+                            <constraint firstItem="fcq-go-fgK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AHl-fj-rYi"/>
+                            <constraint firstItem="fcq-go-fgK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EmM-aQ-ACu"/>
+                            <constraint firstItem="fcq-go-fgK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="60" id="xc7-CI-3xx"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="M7D-5i-X41"/>
-                                <exclude reference="ZGS-Ap-PZb"/>
+                                <exclude reference="fcq-go-fgK"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="57z-cK-Utl"/>
-                                <exclude reference="NS6-9Y-8CW"/>
-                                <exclude reference="ONt-y5-9fB"/>
-                                <exclude reference="mjH-2t-1gT"/>
-                                <exclude reference="k9H-DJ-wwH"/>
-                                <exclude reference="zAM-N8-Mj1"/>
+                                <exclude reference="4Qf-2p-Krn"/>
+                                <exclude reference="AHl-fj-rYi"/>
+                                <exclude reference="EmM-aQ-ACu"/>
+                                <exclude reference="xc7-CI-3xx"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="M7D-5i-X41"/>
-                                <include reference="ZGS-Ap-PZb"/>
+                                <include reference="fcq-go-fgK"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="57z-cK-Utl"/>
-                                <include reference="NS6-9Y-8CW"/>
-                                <include reference="ONt-y5-9fB"/>
-                                <include reference="mjH-2t-1gT"/>
-                                <include reference="k9H-DJ-wwH"/>
-                                <include reference="zAM-N8-Mj1"/>
+                                <include reference="4Qf-2p-Krn"/>
+                                <include reference="AHl-fj-rYi"/>
+                                <include reference="EmM-aQ-ACu"/>
+                                <include reference="xc7-CI-3xx"/>
                             </mask>
                         </variation>
                     </view>
@@ -88,6 +59,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImage" width="57" height="57"/>
+        <image name="LaunchImage" width="90" height="90"/>
     </resources>
 </document>
