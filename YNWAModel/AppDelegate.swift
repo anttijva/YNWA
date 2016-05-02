@@ -117,80 +117,80 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Companies
         let company = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
-        company.name = "Metro"
+        company.name = "Metropolia University of Applied Sciences"
         company.companyDescription = "Helsinki Metropolia University of Applied Sciences is one of the most international universities of applied sciences in Finland. International activities at Metropolia include international degree programmes, student and teacher mobility, work placement opportunities abroad and various projects."
-        company.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
+        company.logoURL = "https://exchange.edu.metropolia.fi/travelreports/images/MetropoliaLogoTopLeft.png"
         company.companyURL = "http://www.metropolia.fi/"
         
         
         let company2 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company2.name = "Sport Inc."
         company2.companyDescription = "We're an app to find and do fitness. We are committed to making getting out and doing fun fitness stuff easy and super transparent. We've originated in New York City and Helsinki, Finland (we know, right). If either of these locations are a good fit for you, get in touch with us. If not, do it anyway!SportSetter crew is an ambitious and skilful bunch."
-        company2.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
+        company2.logoURL = "http://blog.fitlyst.com/wp-content/uploads/2015/04/Sportsetter.png"
         company2.companyURL = "https://sportsetter.workable.com/"
         
         let company3 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company3.name = "Kiasma"
         company3.companyDescription = "Kiasma is a museum of contemporary art under the umbrella of the Finnish National Gallery. Its primary role is to educate the public on contemporary art and to strengthen the status of art in Finland in general. A lively cultural centre and meeting place, Kiasma is the place for pleasure and experience. The name derives from ‘chiasm’, which stands for an intersection, particularly the crossing of optic nerves."
-        company3.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
+        company3.logoURL = "http://www.hiap.fi/system/files/hiap_images/kiasma_logo_magenta.jpg"
         company3.companyURL = "http://www.kiasma.fi/en/kiasma/"
 
         let company4 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company4.name = "Movenium Oy"
         company4.companyDescription = "Movenium was established in 2005 and we have just celebrated our 10 year anniversary in 2015. Our aim is to provide the best possible service to our clients. We are confident that our solution can massively reduce the monthly working hours that each of the different level employees have, from the staff to the directors use for the time management process."
-        company4.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/background.jpg"
+        company4.logoURL = "http://www.movenium.com/wp-content/uploads/2014/11/Movenium_vaaka.png"
         company4.companyURL = "http://www.movenium.com/en/about-us/"
 
         let company5 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company5.name = "Pro-Football Inc."
         company5.companyDescription = "Pro-Football, Inc., doing business as The Washington Redskins, operates a football club. Its categories include news, videos, photos, team, schedule, tickets, cheer, fedexfield, and shop. The company was founded in 1932 and is based in Ashburn, Virginia. Pro-Football, Inc. operates as a subsidiary of Washington Football, Inc."
-        company5.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/background.jpg"
+        company5.logoURL = "http://www.lommen.com/wp-content/uploads/2014/07/Redskins-logo-200x-72dpi-300x80.jpg"
         company5.companyURL = "http://www.redskins.com"
 
         let company6 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company6.name = "Pulse"
         company6.companyDescription = "PULSE delivers high-quality, competitive transaction routing and settlement services for a variety of electronic payment products. This is achieved primarily through the operation of the network “switch.” The PULSE switch routes electronic messages between debit/ATM terminals, processors and card-issuing financial institutions. An authorization or denial is then returned to the terminal and the cardholder."
-        company6.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/background.jpg"
+        company6.logoURL = "http://www.covchurch.org/wp-content/uploads/sites/2/2012/04/pulse-lockup.png"
         company6.companyURL = "https://www.pulsenetwork.com/"
 
         
         // Employees
         let employee = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
-        employee.name = "Alex"
+        employee.name = "Alex Lindroos"
         employee.company = company
         employee.position = "Tech Department Header"
-        employee.profileURL = "http://users.metropolia.fi/~thanhtra/images/me.jpg"
+        employee.profileURL = "https://scontent-arn2-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/10846421_10202140410072047_799535652551650595_n.jpg?oh=8717f610cde8d2f7a2d968c6b159514b&oe=57AD2F2A"
         
     
         let employee2 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
-        employee2.name = "Mikael"
+        employee2.name = "Mikael Gousetis"
         employee2.company = company2
         employee2.position = "Road Man"
-        employee2.profileURL = "http://users.metropolia.fi/~thanhtra/sad.gif"
+        employee2.profileURL = "https://scontent-arn2-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/20989_10209011270626753_127441520039407267_n.jpg?oh=6c41d9cffbe1b25518bd4452eecff8e0&oe=579DB6D3"
         
         let employee3 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
-        employee3.name = "Juhani"
+        employee3.name = "Juhani Lavonen"
         employee3.company = company3
         employee3.position = "Developer"
-        employee3.profileURL = "http://users.metropolia.fi/~thanhtra/sad.gif"
+        employee3.profileURL = "https://scontent-arn2-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/11892162_127517454262258_4956090422152046590_n.jpg?oh=f75192c51723b6836cfd5fe4fb9dbd75&oe=57A4E1EC"
         
         let employee4 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
-        employee4.name = "Antti"
+        employee4.name = "Antti Valkonen"
         employee4.company = company4
         employee4.position = "Developer"
-        employee4.profileURL = "http://users.metropolia.fi/~thanhtra/images/me.jpg"
+        employee4.profileURL = "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/1474526_783028925044434_1110251092_n.jpg?oh=ecdf234d4e8a77c7cb82e2ad7abcbd3b&oe=57E77F8A"
         
         let employee5 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
-        employee5.name = "Kevin"
+        employee5.name = "Thanh Binh Tran"
         employee5.company = company5
         employee5.position = "Manager"
-        employee5.profileURL = "http://users.metropolia.fi/~thanhtra/images/me.jpg"
+        employee5.profileURL = "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/989_919947081388479_5874319862330865673_n.jpg?oh=0bd5535381f1f585cbc094d0b3b757e5&oe=57A0EECB"
         
         let employee6 = NSEntityDescription.insertNewObjectForEntityForName("Employee", inManagedObjectContext: managedObjectContext) as! Employee
-        employee6.name = "KH"
+        employee6.name = "Khanh Nguyen"
         employee6.company = company6
         employee6.position = "Tester"
-        employee6.profileURL = "http://users.metropolia.fi/~thanhtra/sad.gif"
+        employee6.profileURL = "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/10410328_1613020138909502_3964188692878317186_n.jpg?oh=819db4213edac79fa7970774564c41d4&oe=57B9DEB3"
         
         
         // Beacons
