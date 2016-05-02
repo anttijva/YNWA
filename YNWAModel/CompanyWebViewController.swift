@@ -15,9 +15,12 @@ class CompanyWebViewController: UIViewController {
     @IBOutlet weak var companyWebView: UIWebView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Set background color to back
+        self.view.backgroundColor = UIColor.blackColor()
+        
         loadAddress()
     }
 

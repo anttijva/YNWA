@@ -24,6 +24,7 @@ class CompanyViewController: UIViewController {
         self.view.backgroundColor = UIColor.blackColor()
         
         if let company = company {
+            navigationItem.title = company.name
             descriptionTextView.text = company.companyDescription
             
             // Load image for company logo

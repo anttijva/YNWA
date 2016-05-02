@@ -28,9 +28,14 @@ class EmployeeViewController: UIViewController {
         self.view.backgroundColor = UIColor.blackColor()
         
         if let beacon = beacon {
-            nameLabel.text?.appendContentsOf((beacon.employee?.name)!)
-            positionLabel.text?.appendContentsOf((beacon.employee?.position)!)
-            companyButton.setTitle("Company: " + (beacon.company?.name)!, forState: .Normal)
+            nameLabel.text = beacon.employee?.name
+            positionLabel.text = beacon.employee?.position
+            
+            
+            //companyButton.titleLabel?.textAlignment = NSTextAlignment.Center
+            companyButton.setTitle((beacon.company?.name)!, forState: .Normal)
+            companyButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Center
+            
             
             // Load images for profile and companylogo
             print("LOADING COMPANY LOGO")
