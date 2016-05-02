@@ -118,36 +118,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Companies
         let company = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company.name = "Metro"
-        company.companyDescription = "placeholder"
+        company.companyDescription = "Helsinki Metropolia University of Applied Sciences is one of the most international universities of applied sciences in Finland. International activities at Metropolia include international degree programmes, student and teacher mobility, work placement opportunities abroad and various projects."
         company.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
         company.companyURL = "http://www.metropolia.fi/"
         
         
         let company2 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company2.name = "Sport Inc."
-        company2.companyDescription = "placeholder"
+        company2.companyDescription = "We're an app to find and do fitness. We are committed to making getting out and doing fun fitness stuff easy and super transparent. We've originated in New York City and Helsinki, Finland (we know, right). If either of these locations are a good fit for you, get in touch with us. If not, do it anyway!SportSetter crew is an ambitious and skilful bunch."
         company2.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
+        company2.companyURL = "https://sportsetter.workable.com/"
         
         let company3 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company3.name = "Kiasma"
-        company3.companyDescription = "placeholder"
+        company3.companyDescription = "Kiasma is a museum of contemporary art under the umbrella of the Finnish National Gallery. Its primary role is to educate the public on contemporary art and to strengthen the status of art in Finland in general. A lively cultural centre and meeting place, Kiasma is the place for pleasure and experience. The name derives from ‘chiasm’, which stands for an intersection, particularly the crossing of optic nerves."
         company3.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/metro.jpg"
+        company3.companyURL = "http://www.kiasma.fi/en/kiasma/"
 
         let company4 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
-        company4.name = "Construction Inc."
-        company4.companyDescription = "placeholder"
+        company4.name = "Movenium Oy"
+        company4.companyDescription = "Movenium was established in 2005 and we have just celebrated our 10 year anniversary in 2015. Our aim is to provide the best possible service to our clients. We are confident that our solution can massively reduce the monthly working hours that each of the different level employees have, from the staff to the directors use for the time management process."
         company4.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/background.jpg"
+        company4.companyURL = "http://www.movenium.com/en/about-us/"
 
         let company5 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
-        company5.name = "Football Pro Inc."
-        company5.companyDescription = "placeholder"
+        company5.name = "Pro-Football Inc."
+        company5.companyDescription = "Pro-Football, Inc., doing business as The Washington Redskins, operates a football club. Its categories include news, videos, photos, team, schedule, tickets, cheer, fedexfield, and shop. The company was founded in 1932 and is based in Ashburn, Virginia. Pro-Football, Inc. operates as a subsidiary of Washington Football, Inc."
         company5.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/background.jpg"
+        company5.companyURL = "http://www.redskins.com"
 
         let company6 = NSEntityDescription.insertNewObjectForEntityForName("Company", inManagedObjectContext: managedObjectContext) as! Company
         company6.name = "Pulse"
-        company6.companyDescription = "placeholder"
+        company6.companyDescription = "PULSE delivers high-quality, competitive transaction routing and settlement services for a variety of electronic payment products. This is achieved primarily through the operation of the network “switch.” The PULSE switch routes electronic messages between debit/ATM terminals, processors and card-issuing financial institutions. An authorization or denial is then returned to the terminal and the cardholder."
         company6.logoURL = "http://users.metropolia.fi/~thanhtra/Media_Labs/background.jpg"
-        company6.companyURL = "http://www.metropolia.fi/"
+        company6.companyURL = "https://www.pulsenetwork.com/"
 
         
         // Employees
