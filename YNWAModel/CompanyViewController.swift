@@ -21,11 +21,14 @@ class CompanyViewController: UIViewController {
         super.viewDidLoad()
         
         // Set background color to back
-        self.view.backgroundColor = UIColor.blackColor()
+        //self.view.backgroundColor = UIColor.blackColor()
         
         if let company = company {
             navigationItem.title = company.name
             descriptionTextView.text = company.companyDescription
+            descriptionTextView.textColor = UIColor.whiteColor()
+            descriptionTextView.font = UIFont(name: "Arial", size: 20)
+            descriptionTextView.textAlignment = NSTextAlignment.Left
             
             // Load image for company logo
             load_image(company.logoURL!, imageView: self.companyLogoImageView)
